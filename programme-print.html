@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Belonging to the Victorians? — Programme</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+  :root {
+    --ink:   #1a1a16;
+    --soft:  #2c3a31;
+    --faint: #45524a;
+    --gold:  #8a6a24;
+    --green: #1c3829;
+    --rule:  #cfc9b8;
+  }
+
+  @page {
+    size: A4;
+    margin: 18mm 20mm;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+
+  body {
+    background: #ffffff;
+    color: var(--ink);
+    font-family: 'Cormorant Garamond', Garamond, serif;
+    font-size: 12.5pt;
+    line-height: 1.42;
+  }
+
+  /* ── Masthead ── */
+
+  .masthead {
+    text-align: center;
+    padding-bottom: 1.1rem;
+    border-bottom: 1.5px solid var(--gold);
+    margin-bottom: 1.6rem;
+  }
+
+  .eyebrow {
+    font-size: 9pt;
+    font-weight: 600;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .masthead h1 {
+    font-weight: 600;
+    font-size: 27pt;
+    line-height: 1.05;
+    color: var(--green);
+    margin: 0.5rem 0 0.15rem;
+  }
+
+  .masthead .subtitle {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 15pt;
+    color: var(--soft);
+  }
+
+  .masthead .meta {
+    margin-top: 0.7rem;
+    font-size: 11pt;
+    color: var(--ink);
+  }
+  .masthead .meta .sep { color: var(--faint); padding: 0 0.4em; }
+  .masthead .meta .venue { font-style: italic; }
+
+  .intro {
+    text-align: center;
+    font-size: 12pt;
+    font-weight: 500;
+    color: var(--ink);
+    max-width: 40em;
+    margin: 0 auto 0.8rem;
+  }
+
+  .speaker-note {
+    text-align: center;
+    font-style: italic;
+    font-size: 9.5pt;
+    color: var(--gold);
+    max-width: none;
+    white-space: nowrap;
+    margin: 0 auto 1.6rem;
+  }
+
+  /* ── Programme rows ── */
+
+  .row {
+    display: grid;
+    grid-template-columns: 5.4rem 1fr;
+    column-gap: 1.1rem;
+    padding: 0.42rem 0;
+    border-bottom: 0.75px solid var(--rule);
+    page-break-inside: avoid;
+  }
+  .row:first-of-type { border-top: 0.75px solid var(--rule); }
+
+  .row .time {
+    font-weight: 600;
+    color: var(--gold);
+    font-size: 11.5pt;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    padding-top: 0.05rem;
+  }
+
+  .row .title {
+    font-weight: 600;
+    font-size: 13pt;
+    color: var(--green);
+  }
+
+  .row .note {
+    font-style: italic;
+    color: var(--faint);
+    font-size: 11pt;
+    margin-top: 0.1rem;
+  }
+
+  /* panels */
+  .papers { margin-top: 0.35rem; }
+  .paper { padding: 0.16rem 0; page-break-inside: avoid; }
+  .paper .speaker {
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 12pt;
+  }
+  .paper .ptitle {
+    color: var(--ink);
+    font-weight: 500;
+    font-size: 12pt;
+    line-height: 1.3;
+  }
+  .followed { font-style: italic; color: var(--faint); font-size: 11pt; margin-top: 0.2rem; }
+
+  .row.keynote .title { color: var(--gold); }
+
+  /* ── Footer ── */
+
+  .footer {
+    margin-top: 1.8rem;
+    padding-top: 1.1rem;
+    border-top: 1.5px solid var(--gold);
+    text-align: center;
+    page-break-inside: avoid;
+  }
+  .footer .free {
+    font-size: 11pt;
+    color: var(--ink);
+  }
+  .footer .org {
+    font-style: italic;
+    font-size: 10pt;
+    color: var(--soft);
+    margin-top: 0.4rem;
+  }
+  .footer .site {
+    font-size: 9.5pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: 0.5rem;
+  }
+  .footer img {
+    height: 26px;
+    margin-top: 0.9rem;
+    opacity: 0.85;
+  }
+</style>
+</head>
+<body>
+
+  <div class="masthead">
+    <div class="eyebrow">Friday 4 September 2026</div>
+    <h1>Belonging to the Victorians?</h1>
+    <div class="subtitle">Community, Collections, and Care</div>
+    <div class="meta">
+      <span class="venue">Wilton&rsquo;s Music Hall, 1 Graces Alley, London E1 8JB</span>
+    </div>
+  </div>
+
+  <p class="intro">A one-day conference bringing together researchers working on Victorian community, collections and care: four themed panels of short papers, followed by a keynote address from Professor Jane Hamlett (Royal Holloway, University of London).</p>
+
+  <p class="speaker-note">Speakers, please keep your paper to 15 minutes and bring your slides on a USB drive; we will load them panel by panel.</p>
+
+  <div class="row">
+    <div class="time">09:00</div>
+    <div class="what"><span class="title">Registration &amp; coffee</span></div>
+  </div>
+
+  <div class="row">
+    <div class="time">09:30</div>
+    <div class="what"><span class="title">Welcome</span><div class="note">Daniel Grey &amp; William Bainbridge</div></div>
+  </div>
+
+  <div class="row">
+    <div class="time">09:40</div>
+    <div class="what">
+      <span class="title">Panel 1 &middot; Care, Craft and Control</span>
+      <div class="papers">
+        <div class="paper"><div class="speaker">Dr Catherine Phipps (University of Bristol)</div><div class="ptitle">Coercive Care for Penitent Women: The Reform Home for Sex Workers in Wellclose Square, 1830&ndash;1875</div></div>
+        <div class="paper"><div class="speaker">Professor Alana Harris (King&rsquo;s College London)</div><div class="ptitle">Lacemaking and the Therapeutic: Weaving Everyday Histories of the Victorian Asylum</div></div>
+        <div class="paper"><div class="speaker">Amy Stone (Royal Holloway, University of London)</div><div class="ptitle">In their own hands: reconstructing difference through the lives of nineteenth-century craftspeople</div></div>
+      </div>
+      <div class="followed">followed by discussion</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="time">10:40</div>
+    <div class="what"><span class="title">Coffee break</span></div>
+  </div>
+
+  <div class="row">
+    <div class="time">11:00</div>
+    <div class="what">
+      <span class="title">Panel 2 &middot; Empire, Race and Collecting</span>
+      <div class="papers">
+        <div class="paper"><div class="speaker">Professor Caroline Bressey (University College London)</div><div class="ptitle">Hostile environments: Victorian prison archives</div></div>
+        <div class="paper"><div class="speaker">Dr Lewis Ryder (University of Lincoln)</div><div class="ptitle">The Ashanti Spoils (1896): Crown agents, museums and Scotland Yard</div></div>
+        <div class="paper"><div class="speaker">Shriya Dasgupta (Purdue University)</div><div class="ptitle">The Burden of Empire: The Impact of Colonial Masculinity on Armed anti-Colonial Resistance in India</div></div>
+      </div>
+      <div class="followed">followed by discussion</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="time">12:00</div>
+    <div class="what"><span class="title">Lunch</span></div>
+  </div>
+
+  <div class="row">
+    <div class="time">13:00</div>
+    <div class="what">
+      <span class="title">Panel 3 &middot; Institutions and Belonging</span>
+      <div class="papers">
+        <div class="paper"><div class="speaker">Steven Spencer (Salvation Army International Heritage Centre)</div><div class="ptitle">Heritage, museums and memorialisation in the Salvation Army</div></div>
+        <div class="paper"><div class="speaker">Amber Flood (University of Exeter)</div><div class="ptitle">Belonging to elite knowledge networks: how subscription libraries shaped and maintained power structures in the English provinces</div></div>
+        <div class="paper"><div class="speaker">Dr Lucinda Matthews-Jones (Liverpool John Moores University), Dr Jane Skelding, and Professor Georgina Brewis (UCL, in absence)</div><div class="ptitle">&lsquo;A trusted, second home&rsquo;: belonging in settlement history and belonging in the settlement community</div></div>
+      </div>
+      <div class="followed">followed by discussion</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="time">14:00</div>
+    <div class="what"><span class="title">Break</span></div>
+  </div>
+
+  <div class="row">
+    <div class="time">14:15</div>
+    <div class="what">
+      <span class="title">Panel 4 &middot; Voice, Memory and the Popular</span>
+      <div class="papers">
+        <div class="paper"><div class="speaker">Dr Deborah Jeffries</div><div class="ptitle">To drink or not to drink? How legislation affected entertainment seekers in the wake of the 1843 Theatres Act</div></div>
+        <div class="paper"><div class="speaker">Tilly Guthrie (University of Sheffield)</div><div class="ptitle">Touching community: tactile literacy and blind identity in nineteenth-century Britain</div></div>
+        <div class="paper"><div class="speaker">Dr Fern Riddell</div><div class="ptitle">&lsquo;No-one loves you more&rsquo;: Recovering Queen Victoria&rsquo;s secret marriage to John Brown, through The John Brown Family Archive</div></div>
+      </div>
+      <div class="followed">followed by discussion</div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="time">15:15</div>
+    <div class="what"><span class="title">Tea break</span></div>
+  </div>
+
+  <div class="row keynote">
+    <div class="time">15:30</div>
+    <div class="what"><span class="title">Keynote &middot; Professor Jane Hamlett</span><div class="note">Royal Holloway, University of London &ndash; chaired, with Q&amp;A</div></div>
+  </div>
+
+  <div class="row">
+    <div class="time">16:30</div>
+    <div class="what"><span class="title">Closing remarks</span></div>
+  </div>
+
+  <div class="row">
+    <div class="time">16:45</div>
+    <div class="what"><span class="title">Depart</span></div>
+  </div>
+
+  <div class="row">
+    <div class="time"></div>
+    <div class="what"><span class="title">Optional pub visit</span><div class="note">All welcome to continue the conversation nearby.</div></div>
+  </div>
+
+  <div class="footer">
+    <div class="free">There is no conference fee, and places are strictly limited.</div>
+    <div class="org">Organised by Daniel Grey &amp; William Bainbridge, University of Hertfordshire</div>
+    <div class="site">belongingtothevictorians.uk</div>
+    <img src="assets/University_of_Hertfordshire_Logo_2019.svg" alt="University of Hertfordshire">
+  </div>
+
+</body>
+</html>

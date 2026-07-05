@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Venue — Belonging to the Victorians?</title>
+<meta name="description" content="Venue information for Belonging to the Victorians? Community, Collections, and Care. Wilton's Music Hall, 1 Graces Alley, London E1 8JB.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Belonging to the Victorians?</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html">Home</a>
+      <a href="programme.html">Programme</a>
+      <a href="abstracts.html">Abstracts</a>
+      <a href="venue.html" aria-current="page">Venue</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-title">
+    <span class="sec-label">Venue</span>
+    <h1>Wilton&rsquo;s Music Hall</h1>
+    <p class="page-sub">1 Graces Alley, London E1 8JB</p>
+  </div>
+
+  <div class="container narrow">
+
+    <figure class="venue-photo">
+      <img src="assets/Wiltons_Music_Hall_entrance.jpg" alt="The frontage of Wilton's Music Hall on Graces Alley, showing the entrance door, hanging lamp and red shutters">
+      <figcaption>Photo: Paul the Archivist, <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.en" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>, via <a href="https://commons.wikimedia.org/wiki/File:Wilton%27s_Music_Hall,_London_22.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a></figcaption>
+    </figure>
+
+    <hr class="divider">
+
+    <div class="section">
+      <p class="sec-label">About the Hall</p>
+      <p class="body-text">Wilton&rsquo;s Music Hall describes the building as &ldquo;the most important surviving early music hall to be seen anywhere&rdquo;, of outstanding architectural and archaeological significance. John Wilton built the hall in 1859 behind the row of buildings on Graces Alley, with the ambition of providing &ldquo;West End glamour, comfort and first-rate entertainment for East End working people&rdquo;. Following a policy of conservative repair, the restoration project was completed in September 2015, when the building became structurally sound for the first time since the renovations of music hall days.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <p class="sec-label">Find Us</p>
+      <iframe class="venue-map" src="https://maps.google.com/maps?q=Wilton%27s%20Music%20Hall%2C%201%20Graces%20Alley%2C%20London%20E1%208JB&t=&z=16&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing Wilton's Music Hall"></iframe>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <p class="sec-label">Nearest Stations</p>
+      <p class="body-text">The closest tube stations are Tower Hill and Aldgate East (both Zone 1) and Shadwell (Zone 2, London Overground/DLR); the closest rail station is Fenchurch Street. Full step-by-step walking directions from each station are given on Wilton&rsquo;s own website, linked below.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <p class="sec-label">Getting Here</p>
+      <p class="body-text">Full travel and access information is available on Wilton&rsquo;s Music Hall&rsquo;s own website:</p>
+      <a class="big-link" href="https://www.wiltons.org.uk/find-us/" target="_blank" rel="noopener noreferrer">Getting here / access information</a>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <p class="sec-label">Attendance</p>
+      <p class="body-text">There is no conference fee, and places are strictly limited. To reserve a place, please email:</p>
+      <a class="cta-email" href="mailto:d.j.grey@herts.ac.uk">d.j.grey@herts.ac.uk</a>
+    </div>
+
+    <hr class="divider">
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <img src="assets/University_of_Hertfordshire_Logo_2019.svg" alt="University of Hertfordshire">
+  <p class="org">Organised by Daniel Grey &amp; William Bainbridge</p>
+  <p class="footer-links">
+    <a href="index.html">Home</a>
+    <a href="programme.html">Programme</a>
+    <a href="abstracts.html">Abstracts</a>
+  </p>
+  <p class="footer-download"><a href="programme.pdf" target="_blank" rel="noopener">Download the programme (PDF)</a></p>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('site-nav');
+  toggle.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+</script>
+
+</body>
+</html>

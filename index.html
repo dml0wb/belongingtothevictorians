@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Belonging to the Victorians? — Community, Collections, and Care</title>
+<meta name="description" content="Belonging to the Victorians? Community, Collections, and Care. A one-day conference at Wilton's Music Hall, London, Friday 4 September 2026. Organised by Daniel Grey and William Bainbridge, University of Hertfordshire.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="assets/favicon-16.png" sizes="16x16" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body class="home">
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="index.html">Belonging to the Victorians?</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html" aria-current="page">Home</a>
+      <a href="programme.html">Programme</a>
+      <a href="abstracts.html">Abstracts</a>
+      <a href="venue.html">Venue</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="hero">
+    <img src="assets/Flaming_June,_by_Frederic_Lord_Leighton_(1830-1896).jpg" alt="Flaming June by Frederic, Lord Leighton (1895)">
+    <div class="hero-titles">
+      <h1>Belonging to the Victorians?</h1>
+      <p class="subtitle">Community, Collections, and Care</p>
+    </div>
+  </div>
+
+  <div class="hero-meta">
+    <p class="date">Friday 4 September 2026</p>
+    <p class="venue"><a href="https://www.wiltons.org.uk/find-us/">Wilton&rsquo;s Music Hall, 1 Graces Alley, London E1 8JB</a></p>
+    <p class="org-by">Organised by Daniel Grey &amp; William Bainbridge, University of Hertfordshire</p>
+  </div>
+
+  <div class="container narrow">
+
+    <div class="section">
+      <p class="sec-label">One-Day Conference</p>
+      <p class="body-text">This one-day conference brings together researchers working on Victorian community, collections and care. The day comprises four themed panels of short papers, followed by a keynote address from Professor Jane Hamlett (Royal Holloway, University of London).</p>
+      <p class="body-text">There is no conference fee, and places are strictly limited.</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <p class="sec-label">Keynote Address</p>
+      <p class="keynote-name">Professor Jane Hamlett</p>
+      <p class="keynote-affil">Royal Holloway, University of London</p>
+    </div>
+
+    <hr class="divider">
+
+    <div class="section">
+      <p class="sec-label">Reserve a Place</p>
+      <p class="body-text">Places are free but limited. To reserve a place, please email:</p>
+      <a class="cta-email" href="mailto:d.j.grey@herts.ac.uk">d.j.grey@herts.ac.uk</a>
+      <p class="cta-note">No conference fee &middot; Places strictly limited</p>
+    </div>
+
+    <hr class="divider">
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <img src="assets/University_of_Hertfordshire_Logo_2019.svg" alt="University of Hertfordshire">
+  <p class="org">Organised by Daniel Grey &amp; William Bainbridge</p>
+  <p class="footer-links">
+    <a href="programme.html">Programme</a>
+    <a href="abstracts.html">Abstracts</a>
+    <a href="venue.html">Venue</a>
+  </p>
+  <p class="footer-download"><a href="programme.pdf" target="_blank" rel="noopener">Download the programme (PDF)</a></p>
+</footer>
+
+<script>
+  var toggle = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('site-nav');
+  toggle.addEventListener('click', function () {
+    var open = nav.classList.toggle('open');
+    toggle.classList.toggle('open', open);
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+</script>
+
+</body>
+</html>

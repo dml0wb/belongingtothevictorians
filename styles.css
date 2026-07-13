@@ -148,8 +148,10 @@ body.home .site-header {
 
 .hero {
   position: relative;
-  height: 78vh;
-  min-height: 520px;
+  /* Cap the height so the image stops ballooning on tall/large viewports,
+     which pushed the title too low (seen on iPad portrait 2026-07-13).
+     Floor keeps it from collapsing on short landscape screens. */
+  height: clamp(520px, 78vh, 680px);
   overflow: hidden;
 }
 
